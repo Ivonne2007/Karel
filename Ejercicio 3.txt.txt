@@ -1,0 +1,27 @@
+class program {
+    program () {
+    // Ejercicio 3 :   Escribe un programa de Karel que haga que Karel esté orientado al Norte, desde cualquier dirección inicial, y a continuación se apague.
+    //Debería terminar en la misma intersección en la que empezó.
+    //¿Alguna sugerencia?
+    //En un mundo nuevo inserta el ejemplo visto arriba para el caso en que Karel está orientado hacia el Sur.
+    //Pero, ¿qué ocurre cuando no está orientado hacia el Sur?. ¡Podría estar también orientado hacia el Norte o el Este !. Entonces necesitas dos sentencias 
+    //if adicionales, en las cuales se especifique que es lo que debe hacer Karel en esas situaciones.
+    //Modifica el mundo inicial de Karel para probar cualquiera de las 4 direcciones de inicio,
+   //y para cada una de ellas vuelve a ejecutar el programa.
+   //En esta sección hemos visto como usar las sentencias de control para adaptar Karel a cada situación.
+    
+    if(facingSouth) {
+    turnleft();
+    turnleft();
+    }
+   if(facingEast) {
+   turnleft();
+   }
+   if(facingWest) {
+   turnleft();
+   turnleft();
+   turnleft();
+   }
+        turnoff();
+    }
+}

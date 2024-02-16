@@ -1,0 +1,31 @@
+class program {
+    program () {
+        // Ejercicio 5 :   Karel tiene la tarea de alinear una colección de zumbadores en la primera Calle que ha sido distribuida desigualmente.
+        //Empieza en la 1ªCalle y la 15ªAvenida y está orientado al Oeste. Se supone que en cada esquina hay exactamente un zumbador. Sin embargo,
+        //Karel puede encontrar 0, 1 o 2 zumbadores en cualquier intersección. Su tarea es asegurar que exactamente hay un zumbador antes de continuar hacia 
+        //la siguiente esquina. Cuando llega a la esquina 1,1 debe apagarse.
+        //Diseña el mundo inicial para que Karel comience en la esquina 1,15 orientado hacia el Oeste. Karel debe empezar con 15 zumbadores en la mochila. Aleatoriamente sitúa 1 o 2 zumbadores en esquinas a lo largo de la 1ªCalle, y deja alguna sin zumbadores. Guarda tu mundo inicial con el nombre lineaDeZumbadores.mdo.
+       //Escribe el programa para hacer que Karel complete la tarea descrita anteriormente. Guarda tu programa con el nombre lineaDeZumbadores.txt. Truco: utiliza iterate, un if/else, y un if.
+       //Recuerda, ¡no sabemos qué esquinas tienen el número equivocado de zumbadores! Karel debe hacer la tarea correctamente independientemente del nẃ de zumbadores que haya en cada esquina.
+        while(frontIsClear)
+        {
+        if(notNextToABeeper)
+        {
+        putbeeper();
+        move();
+        }
+        else{
+        pickbeeper();
+        if(notNextToABeeper)
+        {
+        putbeeper();
+        move();
+        }
+        else 
+        {
+        move();
+        }
+        }
+        }
+         }
+         }
